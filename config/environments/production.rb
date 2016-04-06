@@ -84,4 +84,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # React js builds: https://github.com/reactjs/react-rails
+  config.react.variant = :production
 end
