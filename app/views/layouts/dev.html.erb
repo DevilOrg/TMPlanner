@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRM: Dev</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag 'dev', media: 'all' %>
+  </head>
+
+  <body>
+    <%= link_to t('nav.logout'), destroy_user_session_path %> |
+    <%= link_to t('nav.dashboard'), dev_root_path %> |
+    <%= link_to t('nav.taskm'), dev_taskm_sprints_path %>
+
+    <br /><hr />
+
+    <%= yield %>
+  </body>
+</html>

@@ -18,11 +18,16 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    root 'dashboards#show'
+    root 'dashboards#show', as: :root
   end
 
   namespace :dev do
-    root 'dashboards#show'
+    root 'dashboards#show', as: :root
+
+    # Task manager
+    namespace :taskm do
+      resources :sprints
+    end
   end
 
 end

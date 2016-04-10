@@ -1,8 +1,4 @@
-class Dev::DashboardsController < ApplicationController
-
-  before_action :require_login
-
+class Dev::DashboardsController < Dev::BaseController
   def show
   end
-
 end

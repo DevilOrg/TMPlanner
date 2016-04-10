@@ -20,4 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  nav:
+    logout: "Logout"
+    dashboard: "Dashboard"
+    taskm: "Task manager"
+
+  dev:
+    taskm:
+      sprints: "Sprints"
+      backlog: "Backlog"
+      issues: "issues"
