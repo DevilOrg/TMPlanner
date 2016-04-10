@@ -22,6 +22,10 @@ gem 'uglifier', '>= 1.3.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
+# Build JSON APIs: https://github.com/ruby-grape/grape
+gem 'grape'
+gem 'hashie-forbidden_attributes'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 

@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
 
+  # Mount Grape API
+  mount API => '/'
+
   scope module: :auth do
     get 'sign_in', to: 'sessions#new', as: :new_user_session
     post 'sign_in', to: 'sessions#create', as: :user_session
@@ -21,4 +24,5 @@ Rails.application.routes.draw do
   namespace :dev do
     root 'dashboards#show'
   end
+
 end
