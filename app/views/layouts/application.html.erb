@@ -5,10 +5,19 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
   <body>
+    <!-- TODO: Temporary auth links here, will be removed -->
+    <% if current_user %>
+      <%= link_to 'logout', destroy_user_session_path %>
+    <% else %>
+      <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+
+    <br /><hr />
+
     <%= yield %>
   </body>
 </html>
