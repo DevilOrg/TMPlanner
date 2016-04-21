@@ -1,0 +1,36 @@
+nav.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      a.navbar-brand [
+        href="#"
+      ] = t ".brand"
+
+    ul.nav.navbar-nav
+      li
+        a [
+          href="#"
+        ] = t ".users"
+
+    ul.nav.navbar-nav.navbar-right
+      li.dropdown
+        a.dropdown-toggle [
+          href="#"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        ]
+          = current_user.email
+          span.caret
+
+        ul.dropdown-menu
+          li
+            a [
+              href="#"
+            ] = t ".profile"
+
+          li.divider [
+            role="separator"
+          ]
+
+          li = link_to t(".sign_out"), destroy_user_session_path

@@ -1,0 +1,8 @@
+en:
+  auth:
+    sessions:
+      new:
+        title: "Authorize please"
+        email: "Email"
+        password: "Password"
+        submit: "Login"

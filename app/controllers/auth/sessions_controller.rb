@@ -1,7 +1,10 @@
 class Auth::SessionsController < ApplicationController
 
-  def new
-  end
+  layout 'auth'
+
+  before_action :not_logged, only: [:new, :create]
+
+  def new; end
 
   def create
     if @user = login(params[:email], params[:password])
@@ -12,8 +15,13 @@ class Auth::SessionsController < ApplicationController
   end
 
   def destroy
-    logout
-    redirect_to '/'
+    logout; redirect_to '/'
+  end
+
+  private
+
+  def not_logged
+    redirect_back_or_to '/' if current_user
   end
 
 end

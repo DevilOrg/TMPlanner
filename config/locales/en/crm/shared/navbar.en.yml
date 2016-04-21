@@ -1,0 +1,8 @@
+ru:
+  crm:
+    shared:
+      navbar:
+        brand: "Brand"
+        users: "Users"
+        profile: "Profile"
+        sign_out: "Sign Out"

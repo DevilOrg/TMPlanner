@@ -1,0 +1,8 @@
+ru:
+  auth:
+    sessions:
+      new:
+        title: "Авторизуйтесь пожалуйста"
+        email: "Email"
+        password: "Пароль"
+        submit: "Войти"

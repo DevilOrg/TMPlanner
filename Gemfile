@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.beta3', '< 5.1'
 
@@ -12,6 +11,9 @@ gem 'puma'
 
 # Use react js
 gem 'react-rails'
+
+# Use twitter bootstrap
+gem 'bootstrap-sass'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -37,6 +39,9 @@ gem 'hashie-forbidden_attributes'
 
 # Authorization
 gem 'sorcery'
+
+# Html
+gem 'slim'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
