@@ -1,2 +1,4 @@
 ru:
-  hello: "Привет мир"
+  email: "Email"
+  cancel: "Отменить"
+  save: "Сохранить"

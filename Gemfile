@@ -15,6 +15,9 @@ gem 'react-rails'
 # Use twitter bootstrap
 gem 'bootstrap-sass'
 
+# Use awesome fonts
+gem 'font-awesome-sass'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
@@ -37,8 +40,14 @@ gem 'hashie-forbidden_attributes'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Decorator
+# gem 'draper'
+
 # Authorization
 gem 'sorcery'
+
+# Validate email
+gem 'email_validator'
 
 # Html
 gem 'slim'

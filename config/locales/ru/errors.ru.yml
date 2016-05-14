@@ -1,0 +1,10 @@
+ru:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              invalid: "Неверный формат"
+              blank: "Не заполнено"
+              taken: "Не уникальный"

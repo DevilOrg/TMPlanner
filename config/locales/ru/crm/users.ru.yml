@@ -1,0 +1,12 @@
+ru:
+  crm:
+    users:
+      index:
+        users:
+          title: "Список пользователей"
+
+        search:
+          title: "Поиск"
+
+      new:
+        title: "Новый пользователь"

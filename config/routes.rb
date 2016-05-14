@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   # CRM: admin, settings, users, etc...
   namespace :crm do
     root 'dashboards#show'
+
+    resources :users
   end
 
 end

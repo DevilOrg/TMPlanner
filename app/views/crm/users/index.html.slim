@@ -1,0 +1,29 @@
+.row
+  .col-lg-12
+    .well
+      = link_to new_crm_user_path
+        = icon "user-plus", class: "fa-green"
+
+.row
+  .col-lg-8
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title = t ".users.title"
+
+      .panel-body
+        table.table.table-condensed
+          thead
+            tr
+              th = t ".email"
+              th
+          tbody
+            - @users.each do |user|
+              tr
+                td = user.email
+                td
+
+  .col-lg-4
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title = t ".search.title"
+      .panel-body Content
