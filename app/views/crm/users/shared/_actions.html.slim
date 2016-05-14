@@ -1,0 +1,7 @@
+.panel-footer
+  = f.submit t("save"), class: "btn btn-sm btn-success"
+  |&nbsp;
+  = link_to t("cancel"), crm_users_path, class: "btn btn-sm btn-default"
+
+  - unless f.object.new_record?
+    = link_to t("delete"), crm_user_path(f.object), method: :delete, class: "btn btn-sm btn-danger pull-right"

@@ -19,10 +19,29 @@ module Crm
       end
     end
 
+    def edit
+      @user = User.find(params[:id])
+    end
+
+    def update
+      @user = User.find(params[:id])
+
+      if @user.update_attributes user_params
+        redirect_to crm_users_url
+      else
+        render action: :edit
+      end
+    end
+
+    def destroy
+      User.find(params[:id]).destroy
+      redirect_to crm_users_url
+    end
+
     private
 
     def user_params
-      params.require(:user).permit :email
+      params.require(:user).permit :email, :password
     end
 
   end

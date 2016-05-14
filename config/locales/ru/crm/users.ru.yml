@@ -2,11 +2,14 @@ ru:
   crm:
     users:
       index:
-        users:
+        userslist:
           title: "Список пользователей"
 
-        search:
+        searchform:
           title: "Поиск"
 
       new:
         title: "Новый пользователь"
+
+      edit:
+        title: "Редактируем пользователя"

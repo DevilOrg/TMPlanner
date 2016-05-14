@@ -3,5 +3,16 @@
 @import "bootstrap";
 
 // Font Awesome colors
-.fa-green { color: #3C763D }
-.fa-gray { color: gray }
+.fa-red { color: #F04124; }
+.fa-green { color: #43AC6A; }
+.fa-orange { color: #F08A24; }
+.fa-gray { color: gray; }
+
+// Font Awesome sizes
+.fa-fs20 { font-size: 20px; }
+.fa-fs18 { font-size: 18px; }
+.fa-fs16 { font-size: 16px; }
+.fa-fs14 { font-size: 14px; }
+
+// Allign FA icons
+td.actions a:not(:first-child) { margin-left: 10px; }

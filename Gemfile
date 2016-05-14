@@ -9,6 +9,9 @@ gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma'
 
+# Jquery
+gem 'jquery-rails'
+
 # Use react js
 gem 'react-rails'
 
@@ -39,9 +42,6 @@ gem 'hashie-forbidden_attributes'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Decorator
-# gem 'draper'
 
 # Authorization
 gem 'sorcery'
