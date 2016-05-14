@@ -6,11 +6,17 @@
     table.table.table-condensed
       thead
         tr
+          th
+            input type="checkbox"
+
           th style="width: 60px;"
           th = t "email"
       tbody
         - @users.each do |user|
           tr
+            td.checkboxes
+              = react_component "FACheckbox", { userId: user.id }
+
             td.actions
               / = link_to crm_user_path(user), method: :delete
               /   = icon "recycle", class: "fa-red fa-fs18"
